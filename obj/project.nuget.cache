@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "FEambQj4LLXG8GYPol01EvQ7YVEd/mAaZQ0cqE2pPKhUNXAD+gjKUtcog7YTNN7hsXCDTIhhhpl0wf5TXFcLYA==",
+  "success": true,
+  "projectFilePath": "/home/mike/read_shirt/read_shirt.csproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/log4net/2.0.12/log4net.2.0.12.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "/root/.nuget/packages/runtime.linux-arm.runtime.native.system.io.ports/5.0.0-rtm.20519.4/runtime.linux-arm.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
+    "/root/.nuget/packages/runtime.linux-arm64.runtime.native.system.io.ports/5.0.0-rtm.20519.4/runtime.linux-arm64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
+    "/root/.nuget/packages/runtime.linux-x64.runtime.native.system.io.ports/5.0.0-rtm.20519.4/runtime.linux-x64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
+    "/root/.nuget/packages/runtime.native.system.io.ports/5.0.0/runtime.native.system.io.ports.5.0.0.nupkg.sha512",
+    "/root/.nuget/packages/runtime.osx-x64.runtime.native.system.io.ports/5.0.0-rtm.20519.4/runtime.osx-x64.runtime.native.system.io.ports.5.0.0-rtm.20519.4.nupkg.sha512",
+    "/root/.nuget/packages/system.configuration.configurationmanager/4.5.0/system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "/root/.nuget/packages/system.io.ports/5.0.0/system.io.ports.5.0.0.nupkg.sha512",
+    "/root/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/root/.nuget/packages/system.security.cryptography.protecteddata/4.5.0/system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "/root/.nuget/packages/system.security.permissions/4.5.0/system.security.permissions.4.5.0.nupkg.sha512",
+    "/root/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
