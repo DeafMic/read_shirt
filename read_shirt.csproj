@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework> 
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SewLib.dll">
       <HintPath>..\SewLib.dll</HintPath>
     </Reference>
-    <PackageReference Include="System.IO.Ports" Version="5.0.0"/>
     <PackageReference Include="log4net" Version="2.0.12"/>
+    <PackageReference Include="NetCoreSerial" Version="1.3.2"/>
+    <PackageReference Include="System.IO.Ports" Version="5.0.1"/>
   </ItemGroup>
 </Project>

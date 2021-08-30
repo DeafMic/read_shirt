@@ -11,6 +11,8 @@ using System.IO.Ports;
 
 
 
+
+
 class Testing
 {
 
@@ -18,20 +20,16 @@ class Testing
     SerialPort comPort;
     public Testing()
     {
-        //InitializeComponent();
-         
-        //comPort = new SerialPort("/dev/rfcomm0",115200,Parity.None,8,StopBits.One);
-        //comPort.Close();
+        
         comPort = new SerialPort("/dev/rfcomm0",115200);
-        //comPort.Open();
+        
 
         myDevice = new SewDevice(ref comPort);
-        //this.listBox1.Enabled = false;
-        //this.listBox1.Items.Clear();
+        
         myDevice.OnSamplesReceived += new ReceivedSamplesHandler(ReceiveData);
 
     }
-    //private void btstart_Click(object sender, EventArgs e)
+    
     private void btstart_Click()
     {
         eErrorClassOpcodes reply = myDevice.StartStreaming();
@@ -76,25 +74,26 @@ class Testing
     //public void ReceiveData(SewDeviceEventArgs e)
 
     {
-        Console.WriteLine("herererer");
+        
         foreach (SewChannelStream channelstream in e.samplesList)
         {
             switch (channelstream.channel)
             {
-                case eChannelNumb.MagX:
+                case eChannelNumb.AccX:
                     foreach (SewSample sample in channelstream.samples)
                     {
                        
-                        Console.WriteLine(sample.sample);
+                        Console.WriteLine("AccX is:" + sample.sample);
                     }
                     break;
-                case eChannelNumb.RespPiezo:
+                case eChannelNumb.MagX:
                     foreach (SewSample sample in channelstream.samples)
                     {
-                        // do something here with each samples
-                        // from this channel
+                        Console.WriteLine("MagX is:"+ sample.sample);
                     }
                     break;
+
+
                 //
                 // add here all the channel to be monitored
                 //
@@ -108,19 +107,13 @@ class Testing
     {
        
         Testing acquire = new Testing();
+        
        
-        
-        acquire.btstart_Click();
-        //form.ReceiveData();
-        //SewDeviceEventArgs channel list = new SewDeviceExportEventArgs();
-        //acquire.ReceiveData();
-        Console.WriteLine("yo");
+        Console.Read();
+        //acquire.comPort.Open();
+        acquire.btstop_Click();
         acquire.comPort.Close();
-        acquire.comPort.Open();
-        //acquire.btstop_Click();
-        //Console.Read();
-        
-        
+        Console.WriteLine("Finished");
     }
 
 

@@ -29,3 +29,4 @@
 /home/mike/read_shirt/obj/Debug/net5.0/ref/read_shirt.dll
 /home/mike/read_shirt/obj/Debug/net5.0/read_shirt.pdb
 /home/mike/read_shirt/obj/Debug/net5.0/read_shirt.genruntimeconfig.cache
+/home/mike/read_shirt/bin/Debug/net5.0/NetCoreSerial.dll
