@@ -71,7 +71,7 @@ class Testing
     }
     // used to receive the data
     public void ReceiveData(object sender, SewDeviceEventArgs e)
-    //public void ReceiveData(SewDeviceEventArgs e)
+    
 
     {
         
@@ -107,10 +107,15 @@ class Testing
     {
        
         Testing acquire = new Testing();
+       
+        
+        acquire.btstart_Click();
+        
+        
         
        
-        Console.Read();
-        //acquire.comPort.Open();
+        Console.ReadLine();
+        
         acquire.btstop_Click();
         acquire.comPort.Close();
         Console.WriteLine("Finished");
